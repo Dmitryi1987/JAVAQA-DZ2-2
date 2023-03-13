@@ -1,10 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int score = 132; // начальный счет
-        int amount = 1080; // сумма пополнения
+        int score = 100; // начальный счет
+        int amount = 1100; // сумма пополнения
+        int bonus;
 
-        int bonus = amount / 100; // бонусные рубли
-        if (amount > 1000) ;
+        if (amount > 1000) {
+            bonus = amount / 100;
+        } else {
+            bonus = 0;
+        }
 
         int result = score + amount + bonus;
 
